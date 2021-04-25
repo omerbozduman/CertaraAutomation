@@ -1,0 +1,9 @@
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/pages/ContactPage.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/utilities/Pages.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/utilities/ConfigurationReader.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/utilities/Driver.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/pages/BasePage.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/runner/CukesRunner.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/utilities/BrowserUtils.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/step_definitions/Hooks.java
+/Users/omerbozduman/IdeaProjects/CertaraAutomation/src/test/java/com/certara/step_definitions/ContactPageStepDefs.java

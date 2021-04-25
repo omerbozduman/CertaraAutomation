@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>25 Apr 2021, 18:32</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()</td>
+              <td>8</td>
+              <td class="duration" data-value="238512125">0.238</td>
+              <td class="duration" data-value="238512125">0.321</td>
+              <td class="duration" data-value="1908097000">1.908</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="652043571">0.652</td>
+              <td class="duration" data-value="652043571">0.762</td>
+              <td class="duration" data-value="4564305000">4.564</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.iVerifyMessageIsDisplayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3064826000">3.064</td>
+              <td class="duration" data-value="3064826000">3.064</td>
+              <td class="duration" data-value="3064826000">3.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="28143714">0.028</td>
+              <td class="duration" data-value="28143714">0.117</td>
+              <td class="duration" data-value="197006000">0.197</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.i_fill_out_the_form_with_valid_credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="1159191000">1.159</td>
+              <td class="duration" data-value="1159191000">1.159</td>
+              <td class="duration" data-value="1159191000">1.159</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="3932265625">3.932</td>
+              <td class="duration" data-value="3932265625">5.127</td>
+              <td class="duration" data-value="31458125000">31.458</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()</td>
+              <td>8</td>
+              <td class="duration" data-value="2909604125">2.909</td>
+              <td class="duration" data-value="2909604125">4.709</td>
+              <td class="duration" data-value="23276833000">23.276</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="3199933500">3.199</td>
+              <td class="duration" data-value="3199933500">3.685</td>
+              <td class="duration" data-value="25599468000">25.599</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.Hooks.setUp()</td>
+              <td>8</td>
+              <td class="duration" data-value="1407203625">1.407</td>
+              <td class="duration" data-value="1407203625">2.490</td>
+              <td class="duration" data-value="11257629000">11.257</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>8</td>
+              <td class="duration" data-value="109256625">0.109</td>
+              <td class="duration" data-value="109256625">0.153</td>
+              <td class="duration" data-value="874053000">0.874</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>10</td>
+            <td>64</td>
+            <td class="duration">1.614</td>
+            <td class="duration">31.458</td>
+            <td class="duration">1:43.359</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

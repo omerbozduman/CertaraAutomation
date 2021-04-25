@@ -1,0 +1,1224 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-25T17:30:39.072Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2490668000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "verify contact Certara form with valid credentials",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 153799000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4709555000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2243987000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3257011000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1159191000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I fill out the form with valid credentials",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_fill_out_the_form_with_valid_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48794000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3064826000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify \"Thank You!\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank You!\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:30:56.219Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1323977000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "verify contact Certara form with invalid credentials. first name is blank",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 103578000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2695610000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4042878000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3399782000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 706881000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"\", \"Applesed\", \"me@example.com\", \"Apple\" \"Evidence, Value \u0026 Access\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Applesed\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"me@example.com\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Apple\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"Evidence, Value \u0026 Access\"",
+                  "offset": 86
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 308357000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9470000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"This field is required.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is required.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:31:08.820Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1233450000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "verify contact Certara form with invalid credentials. last name is blank",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 104717000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2155113000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4389328000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3685393000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 762803000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"Jane\", \"\", \"me@example.com\", \"Apple\" \"Evidence, Value \u0026 Access\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"me@example.com\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"Apple\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"Evidence, Value \u0026 Access\"",
+                  "offset": 82
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 321008000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13560000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"This field is required.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is required.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:31:21.492Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1259247000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "verify contact Certara form with invalid credentials. email is blank",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 103482000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2306824000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4510646000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3676294000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683912000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"Jane\", \"Applesed\", \"\", \"Apple\" \"Evidence, Value \u0026 Access\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Applesed\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"Apple\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"Evidence, Value \u0026 Access\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 306566000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10824000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"Must be valid email.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Must be valid email.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:31:34.354Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1217895000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "verify contact Certara form with invalid credentials. email is without @",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 104813000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2672714000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3869238000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3153996000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 712258000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"Jane\", \"Applesed\", \"meexample.com\", \"Apple\" \"Evidence, Value \u0026 Access\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Applesed\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"meexample.com\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"Apple\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"Evidence, Value \u0026 Access\"",
+                  "offset": 89
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316056000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8656000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"Must be valid email.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Must be valid email.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:31:46.414Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1353887000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "verify contact Certara form with invalid credentials. email is without .com",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 100709000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2153342000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4940768000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2641018000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 651607000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"Jane\", \"Applesed\", \"me@example\", \"Apple\" \"Evidence, Value \u0026 Access\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Applesed\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"me@example\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"Apple\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"Evidence, Value \u0026 Access\"",
+                  "offset": 86
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 277232000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117780000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"Invalid Input\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid Input\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:31:58.656Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1128791000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "verify contact Certara form with invalid credentials. organization is blank",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 102587000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4183152000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2333948000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3150075000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 644338000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"Jane\", \"Applesed\", \"me@example.com\", \"\" \"Evidence, Value \u0026 Access\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Applesed\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"me@example.com\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"Evidence, Value \u0026 Access\"",
+                  "offset": 85
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 287891000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10196000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"This field is required.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is required.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-25T17:32:10.501Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1249714000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "verify contact Certara form with invalid credentials. topic of interest is blank",
+        "description": "",
+        "id": "contact-page;verify-contact-certara-form-with-invalid-credentials.-\u003ctype\u003e;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 100368000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.certara.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2400523000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I open the certara website",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_open_the_certara_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5127332000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to \"Contact\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2635899000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify \"Contact Certara\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contact Certara\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.i_verify_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 402506000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill out the form with below informations \"Jane\", \"Applesed\", \"me@example.com\", \"Apple\" \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Applesed\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"me@example.com\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"Apple\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 90
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iFillOutTheFormWithBelowInformations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42193000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Contact Us button",
+            "match": {
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iClickContactUsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26520000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify related \"This field is required.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is required.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.certara.step_definitions.ContactPageStepDefs.iVerifyRelatedIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      }
+    ],
+    "name": "Contact Page",
+    "description": "  As an user I want to contact with the Certara",
+    "id": "contact-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ContactPage.feature",
+    "tags": [
+      {
+        "name": "@contact",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
